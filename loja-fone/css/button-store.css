@@ -1,0 +1,59 @@
+.button-store {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 60px;
+    background-color: #252c41;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 250ms linear;
+}
+
+.button-store.-second {
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: 230px;
+    line-height: 56px;
+    margin-right: 38px;
+}
+
+.button-store:hover {
+    background-color: #fff;
+    color: #252c41;
+}
+
+.button-store:active {
+    transform: scale(0.95);
+}
+
+.button-store>button,
+.button-store>a {
+    font-size: inherit;
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .button-store.-second {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .button-store,
+    .button-store.-second {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .button-store.-second {
+        margin-bottom: 20px;
+    }
+}

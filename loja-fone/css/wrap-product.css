@@ -1,0 +1,27 @@
+.wrap-product {
+    display: inline-block;
+    width: 554px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.wrap-product>.buttons {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(calc(100% + 98px));
+}
+
+@media (max-width: 1310px) {
+    .wrap-product {
+        width: 100%;
+    }
+    .wrap-product>.buttons {
+        position: static;
+        min-width: 50%;
+    
+        margin: 0 auto;
+        text-align: center;
+        transform: none;
+    }
+}
+
