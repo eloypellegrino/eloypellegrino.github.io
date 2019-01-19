@@ -1,22 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eloy Pellegrino</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo_elope.png">
 </head>
 
 <body>
-    <div class="info">
-        <h1>👋 Bem-vindo ao meu site!</h1>
-        <h3>O site encontra-se em desenvolvimento.</h3>
-        <p>Para entrar em contato, clique no botão abaixo.</p>
-        <a class="mailButton" href="mailto:eloypellegrino@icloud.com">eloypellegrino@icloud.com</a>
+    <div class="anchor" id="home"></div>
+
+    <!-- Main header -->
+
+    <div class="containerHeader">
+        <header class="mainHeader">
+            <div class="logo">
+                <a href="#home"><img src="img/logo_elope.png" alt=""></a>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" />
+                    <label for="checkbox1"></label>
+                </div>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contactButton">
+                <a href="#contact">Contato</a>
+            </div>
+            <a class="menuMobile" href=""><i class="fas fa-bars fa-2x"></i></a>
+        </header>
     </div>
 
+    <!-- Home -->
+
+    <div class="containerHome">
+        <section class="home">
+            <h1>Desenvolvedor Front&#8209;end.</h1>
+            <p>Sou o <span class="name">Eloy Pellegrino</span>, desenvolvedor web e entusiasta em design UI/UX. Seja
+                bem&#8209;vind@ ao meu site.</p>
+            <a href="#contact">Vamos conversar</a>
+            <img src="" alt="">
+        </section>
+    </div>
+
+    <!-- About me -->
+
+    <div class="anchor" id="about"></div>
+    <div class="containerAbout">
+        <section class="about">
+            <div>
+                <h2>Me conheça melhor</h2>
+                <h1>Sobre</h1>
+            </div>
+            <div>
+                <p>
+                    Formado em Gestão de TI, decidi sair da zona de conforto e me arriscar em uma nova área. Estou no
+                    início de uma grande jornada. <i>Me conheça melhor nas redes abaixo.</i>
+                </p>
+                <section class="social">
+                    <a href="https://www.facebook.com/eloy.pellegrino" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/eloypellegrino/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/eloypellegrino" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="pdf/Currículo - Eloy.pdf" target="_blank"><i class="fas fa-file-alt fa-2x"></i></a>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services -->
+
+    <div class="anchor" id="services"></div>
+    <div class="containerService" id="services">
+        <section class="service">
+            <div class="title">
+                <h2>O que eu faço</h2>
+                <h1>Serviços</h1>
+            </div>
+            <div class="serviceDesc">
+                <div>
+                    <h3>Desenvolvimento Front-end</h3>
+                    <h4>Responsivo</h4>
+                    <p>Todos meus projetos são desenvolvidos para o perfeito funcionamento em todos os dispositivos.</p>
+                    <h4>Otimizado</h4>
+                    <p>Do início ao fim do projeto, a otimização do projeto é pensada e executada a todo momento.</p>
+                    <h4>Código limpo</h4>
+                    <p>Um código limpo além de ajudar a manutenir, é o príncipio para um projeto profissional.</p>
+
+                    <h3>Design UI/UX</h3>
+                    <h4>Layout</h4>
+                    <p>A criação da interface do projeto deve garantir além de ótima usabilidade para o usuário, um
+                        projeto consistente visualmente.</p>
+
+                </div>
+            </div>
+            <div class="iphoneContainer">
+                <img class="iphone" src="img/iPhone-elope.png" alt="">
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="anchor" id="projects"></div>
+    <div class="containerProject" id="projects">
+        <div class="title">
+            <h2>Alguns trabalhos realizados</h2>
+            <h1>Projetos</h1>
+        </div>
+        <section class="projects">
+            <div class="card">
+                <a href="#">Ver o projeto →</a>
+            </div>
+            <div class="card">
+                <a href="#">Ver o projeto →</a>
+            </div>
+            <div class="card">
+                <a href="#">Ver o projeto →</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact -->
+
+    <div class="anchor" id="contact"></div>
+    <div class="containerContact" id="contact">
+        <h1>Pronto para iniciar o seu projeto?</h1>
+        <a class="mailButton" href="mailto:eloypellegrino@icloud.com">eloypellegrino@icloud.com</a>
+        <p class="available"><span class="flag"></span>Disponível para novos projetos.</p>
+        <div class="social">
+            <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fab fa-github fa-2x"></i></a>
+        </div>
+        <p class="author">Site desenhado e codado por Eloy Pellegrino.</p>
+    </div>
+
+    <!-- Script -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
