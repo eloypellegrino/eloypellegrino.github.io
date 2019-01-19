@@ -19,7 +19,6 @@ checkbox.addEventListener("click", () => {
     }
     backgroundImage.classList.toggle("darkBackgroundImage");
 });
-
 checkbox.checked = false;
 
 // Scroll suave

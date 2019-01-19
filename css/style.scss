@@ -155,10 +155,6 @@ html {
     font-size: calc(#{$minimum-size}px + (#{$maximum-size} - #{$minimum-size}) * ((100vw - #{$minimum-viewport}px) / (#{$maximum-viewport} - #{$minimum-viewport})));
 }
 
-// html {
-//     font-size: 62.5%;
-// }
-
 body {
     font-size: 1.6rem;
     transition: all .2s;
