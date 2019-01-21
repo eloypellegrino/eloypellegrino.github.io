@@ -144,7 +144,7 @@ table {
 
 // Base style
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800');
 
 $maximum-viewport: 920;
 $minimum-viewport: 320;
@@ -153,6 +153,8 @@ $minimum-size: 8.2;
 
 html {
     font-size: calc(#{$minimum-size}px + (#{$maximum-size} - #{$minimum-size}) * ((100vw - #{$minimum-viewport}px) / (#{$maximum-viewport} - #{$minimum-viewport})));
+    scroll-behavior: smooth;
+    -webkit-sc
 }
 
 body {
@@ -177,6 +179,7 @@ body {
 
 .containerHeader {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 10;
     background: #fff;
@@ -323,7 +326,7 @@ body {
         background: #0C57FB;
         color: #fff;
         font-weight: 600;
-        box-shadow: 0 5px 20px rgba(44, 44, 44, .2);
+        box-shadow: 0 5px 15px rgba(44, 44, 44, .2);
         transition: all .2s;
         font-size: 1.6rem;
 
@@ -382,7 +385,7 @@ body {
         background: #0C57FB;
         color: #fff;
         font-weight: 600;
-        box-shadow: 0 10px 20px rgba(44, 44, 44, .2);
+        box-shadow: 0 5px 15px rgba(44, 44, 44, .2);
         transition: all .2s;
         width: 200px;
         margin: 0 auto;
@@ -518,7 +521,6 @@ body {
             h4 {
                 font-family: "Open Sans", sans-serif;
                 font-size: 1.8rem;
-                font-weight: bold;
                 font-style: italic;
                 color: #000;
                 margin-left: 20px;
@@ -757,9 +759,11 @@ body {
 
     .containerAbout {
         .about {
+            flex-wrap: wrap;
             .social {
                 justify-content: center;
                 margin-left: 0;
+                
 
                 & a:nth-of-type(4) {
                     margin-right: 0;
@@ -771,6 +775,10 @@ body {
                 text-align: center;
                 padding-left: 0;
                 margin-top: 20px;
+            }
+
+            div {
+                flex: 100%;
             }
 
             & div:nth-of-type(2) {
@@ -795,7 +803,7 @@ body {
         p {
             max-width: 280px;
             margin: 30px auto;
-            font-size: 2.2rem;
+            font-size: 2rem;
             line-height: 1.3;
         }
     }
@@ -820,6 +828,12 @@ body {
 
     .containerAbout {
         padding-top: 60px;
+
+        .about {
+            div {
+                padding: 0 10px;
+            }
+        }
     }
 
     // Services 
@@ -863,6 +877,14 @@ body {
 
 .darkText {
     color: #FFF !important;
+}
+
+.darkLink {
+    color: #c0c0c0 !important;
+
+    &:hover {
+        color: #fff !important;
+    }
 }
 
 .darkBackgroundSecondary {

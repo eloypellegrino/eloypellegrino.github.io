@@ -3,6 +3,7 @@ const background = document.querySelectorAll("body, .containerHeader");
 const backgroundSecondary = document.querySelectorAll(".about, .containerProject");
 const backgroundImage = document.querySelector(".iphoneContainer");
 const text = document.querySelectorAll("h1, h2, h3, h4, p, a");
+const link = document.querySelectorAll(".projectLink");
 
 checkbox.addEventListener("click", () => {
     for (item of background) {
@@ -17,17 +18,10 @@ checkbox.addEventListener("click", () => {
         item.classList.add("transition");
         item.classList.toggle("darkText");
     }
+    for (item of link) {
+        item.classList.add("transition");
+        item.classList.toggle("darkLink");
+    }
     backgroundImage.classList.toggle("darkBackgroundImage");
 });
 checkbox.checked = false;
-
-// Scroll suave
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
