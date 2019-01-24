@@ -628,26 +628,52 @@ body {
             justify-content: space-evenly;
             background: #FFF;
             border-radius: 5px;
-            transition: all .2s linear;
+            transition: all .4s;
             margin: 10px 10px;
+
+            &.-first {
+                background: url(../img/bella-bambina.jpg) no-repeat center;
+                background-size: cover;
+            }
+
+            &.-second {
+                background: url(../img/agencia-deltha.jpg) no-repeat center;
+                background-size: cover;
+            }
+
+            &.-third {
+                background: url(../img/dra-carla.jpg) no-repeat center;
+                background-size: cover;
+            }
+
 
             &:hover {
                 transform: scale(1.03);
-                box-shadow: 0 0px 40px rgba(44, 44, 44, .03);
+                box-shadow: 0px 0px 40px rgba(44, 44, 44, .1);
             }
 
             a {
                 font-family: "Open Sans", sans-serif;
                 font-size: 1.8rem;
-                font-style: italic;
+                font-weight: 600;
                 text-decoration: none;
-                color: #006BFF;
+                text-align: right;
+                color: #fff;
                 position: absolute;
                 bottom: 25px;
-                right: 25px;
+                right: 0px;
+                background: #0C57FB;
+                padding: 15px;
+                padding-right: 20px;
+                width: 135px;
+                border-radius: 5px 0px 0px 5px;
+                box-shadow: -10px 0px 20px rgba(44, 44, 44, .2);
+                transition: all .2s;
+
+
 
                 &:hover {
-                    color: #0a49d1;
+                    background: #0a49d1;
                 }
             }
         }
@@ -761,10 +787,11 @@ body {
     .containerAbout {
         .about {
             flex-wrap: wrap;
+
             .social {
                 justify-content: center;
                 margin-left: 0;
-                
+
 
                 & a:nth-of-type(4) {
                     margin-right: 0;
@@ -881,10 +908,10 @@ body {
 }
 
 .darkLink {
-    color: #c0c0c0 !important;
+    color: #000000 !important;
 
     &:hover {
-        color: #fff !important;
+        color: #6b6b6b !important;
     }
 }
 

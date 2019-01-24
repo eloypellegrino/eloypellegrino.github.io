@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metas configuração navegador -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Metas otimização - SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Metas redes sociais -->
+    <meta property "og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="">
+    <meta property="og:author" content="Agência Deltha">
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+
+    <!-- Links de estilização -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/faviconB.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/hover-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Pizzaria - Bella Bambina</title>
+</head>
+<!-- Verificador de menu ativo -->
+
+<body data-spy="scroll" data-target="#menuAtivo" data-offset="10">
+    <div class="anchor" id="inicio"></div>
+    <div class="container-fluid logoPrincipalFundo d-none d-md-block">
+        <!-- Logotipo -->
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <a href="index.html">
+                    <img class="logoPrincipal" src="img/logo_bb.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Menu principal -->
+    <!-- <div class="row logoPrincipalFundo sticky-top">
+        <div class="col-12 mt-2 mb-2">
+            <nav id="menuAtivo" class="nav d-flex justify-content-center">
+                <a class="nav-link" href="#inicio">Início</a>
+                <a class="nav-link" href="#cardapio">Cardápio</a>
+                <a class="nav-link" href="#ingredientes">Ingredientes</a>
+                <a class="nav-link" href="#sobre">Sobre nós</a>
+                <a class="nav-link" href="#contato">Contato</a>
+            </nav>
+        </div>
+    </div> -->
+
+    <div class="navbar navbar-expand-lg row logoPrincipalFundo sticky-top">
+        <span class="logoMobile d-md-none">Bella Bambina</span>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menuAtivo" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-lg botaoHamburguer"></i>
+        </button>
+        <nav id="menuAtivo" class="collapse navbar-collapse justify-content-center text-center">
+                <a class="nav-link" href="#inicio">Início</a>
+                <a class="nav-link" href="#cardapio">Cardápio</a>
+                <a class="nav-link" href="#ingredientes">Ingredientes</a>
+                <a class="nav-link" href="#sobre">Sobre nós</a>
+                <a class="nav-link" href="#contato">Contato</a>
+        </nav>
+    </div>
+
+
+    <!-- Banner principal -->
+    <div class="container-fluid bannerPrincipal vertical-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 hidden>Bella Bambina</h1>
+                    <h2>A autêntica pizza italiana</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <a class="btn botaoCardapioBanner mr-sm-3 hvr-float" href="">
+                        <i class="fas fa-motorcycle mr-2"></i> Delivery</a>
+                    <a class="btn botaoCardapioBanner ml-sm-3 hvr-float" href="">
+                        <i class="far fa-calendar-check mr-2"></i> Reservas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="anchor" id="cardapio"></div>
+    <!-- Cardápio título -->
+    <div class="container-fluid titulosSecoesFundo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-5 pb-5">
+                    <h2 class="titulosSecoes">Cardápio</h2>
+                    <p class="subtitulosSecoes">Temos tamanhos médios, grandes e personalizados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cardápio Pizzas -->
+    <div class="container-fluid cardapioPizzasInicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row mt-5 pt-3 pb-3">
+                        <div class="col-6">
+                            <img class="cardapioPizzaTamanho" src="img/pizza.png" alt="">
+                        </div>
+                        <div class="col-6 m-auto">
+                            <h3>Mussarela</h3>
+                            <p>Molho de tomate caseiro; Mussarela; Manjericão.</p>
+                            <span>R$ 30,00</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5 pt-3 pb-3">
+                        <div class="col-6">
+                            <img class="cardapioPizzaTamanho" src="img/pizza_marguerita.png" alt="">
+                        </div>
+                        <div class="col-6 m-auto">
+                            <h3>Marguerita</h3>
+                            <p>Molho de tomate caseiro; Mussarela; Manjericão.</p>
+                            <span>R$ 30,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row mt-5 pt-3 pb-3">
+                        <div class="col-6">
+                            <img class="cardapioPizzaTamanho" src="img/pizza_cogumelo.png" alt="">
+                        </div>
+                        <div class="col-6 m-auto">
+                            <h3>Champignon</h3>
+                            <p>Molho de tomate caseiro; Mussarela; Manjericão.</p>
+                            <span>R$ 30,00</span>
+                        </div>
+                    </div>
+                    <div class="row mt-5 pt-3 pb-3">
+                        <div class="col-6">
+                            <img class="cardapioPizzaTamanho" src="img/pizza_toscana.png" alt="">
+                        </div>
+                        <div class="col-6 m-auto">
+                            <h3>Toscana</h3>
+                            <p>Molho de tomate caseiro; Mussarela; Manjericão.</p>
+                            <span>R$ 30,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5 mb-5">
+                    <a class="btn botaoCardapio" href="cardapio.html">Veja o cardápio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anchor" id="ingredientes"></div>
+    <!-- Ingredientes título -->
+    <div class="container-fluid titulosSecoesFundo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-5 pb-5">
+                    <h2 class="titulosSecoes">Ingredientes</h2>
+                    <p class="subtitulosSecoes">Conheça a procedência dos nossos produtos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ingredientes Pizzas -->
+    <div class="container-fluid ingredientesPizzasInicio pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img class="w-100 mt-5 mb-5 rounded" src="img/tomate.jpg" alt="">
+                    <p class="text-center">Nós plantamos, colhemos e tratamos de tudo que utiizamos na pizzaria, além dos legumes, verduras e frutas,
+                        os ovos utilizados são das nossas galinhas, criadas sem hormônios e da forma mais natural possível.
+                        Alimentos sem agrotóxicos, escolhidos individualmente com cuidado e carinho.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="w-100 mt-5 mb-5 rounded" src="img/massa.jpg" alt="">
+                    <p class="text-center">O preparo de todos os ingredientes das pizzas da Bella Bambina é caseiro. Desde o molho de tomate até
+                        as calabresas, queijos e conservas. Nossa massa é uma receita de família criada em Nápoles, na Itália.
+                        O chef Dante de Zampiere comanda nossa cozinha com muito cuidado e alegria.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="w-100 mt-5 mb-5 rounded" src="img/queijo.jpg" alt="">
+                    <p class="text-center">Todos os nossos embutidos, queijos e alguns vinhos são feitos de forma caseira na fazenda da família
+                        Pellegrini no interior de São Paulo. Para aqueles que gostariam de conhecer onde são feitos e estocados
+                        nossos produtos,entre em contato através do e-mail: visita@bellabambina.com.br</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anchor" id="sobre"></div>
+    <!-- Ingredientes título -->
+    <div class="container-fluid titulosSecoesFundo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center pt-5 pb-5">
+                    <h2 class="titulosSecoes">Sobre</h2>
+                    <p class="subtitulosSecoes">Um pouco da nossa história</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre a Bella Bambina -->
+    <div class="container-fluid ingredientesPizzasInicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mt-5 order-2 order-md-0">
+                    <p>Em 1920, Lorezenzo e Antonella saíram de Nápoles rumo à Santa Catarina em busca de mais autonomia. Embarcaram
+                        em um navio sem saber que alguns anos depois seriam donos de uma das melhores pizzarias da cidade.
+                        Após essa grande conquista, já com quatro filhos para criar, Antonella chegou em São Paulo afim de
+                        comandar a nova pizzaria da família. A Bella Bambina nasceu de uma grande aventura e uma história
+                        de amor. Hoje é comandada pelos bisnetos de Lorenzo e Antonella. - Família Pellegrini</p>
+                </div>
+                <div class="col-12 col-md-6 order-1">
+                    <img class="w-100 mt-5" src="img/bellabambina.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="anchor" id="contato"></div>
+    <!-- Contato -->
+    <div class="contianer-fluid fundoContato pt-5">
+        <div class="row m-0">
+            <div class="col-4 mt-5 mb-5 p-0 vertical-center">
+                <img class="w-100" src="img/mesas.jpg" alt="">
+            </div>
+            <div class="col-4 centroContato p-0 rounded">
+                <h4 class="text-light text-center mt-5 mb-4">Contato</h4>
+                <form class="text-center pl-5 pr-5">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">E-mail</label>
+                        <input type="email" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Mensagem</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn mt-3 mb-5">Enviar</button>
+                </form>
+            </div>
+            <div class="col-4 mt-5 mb-5 p-0 vertical-center">
+                <img class="w-100" src="img/cozinha.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Rodape -->
+        <div class="container-fluid fundoRodape">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h4 class="text-light mt-5 mb-5">Localização</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 vertical-center">
+                        <img class="w-100" src="img/logo_fundo_escuro.svg" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img class="w-100" src="img/mapa.png" alt="">
+                    </div>
+                    <div class="col-3 vertical-center">
+                        <nav class="nav flex-column text-center ml-5">
+                            <a href="#">Reservas</a>
+                            <a href="#">Cardápio</a>
+                            <a href="#">Trabalhe conosco</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão back to top -->
+    <!-- <a href="javascript:" id="return-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a> -->
+
+    <a href="#" id="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Script para scroll suave no menu -->
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+    <!-- Script para botão back to top -->
+    <script>
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 200, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+    </script>
+</body>
+
+</html>

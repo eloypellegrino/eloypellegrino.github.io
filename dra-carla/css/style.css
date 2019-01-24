@@ -1,0 +1,408 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Montserrat|Open+Sans|Aladin');
+@font-face {
+  font-family: "Sign Painter";
+  src: url("../fontes/SignPainter.ttc");
+}
+
+/*RESET*/
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+/*TOPO*/
+
+.topo {
+  background-color: #68B9D6;
+  height: 30px;
+  padding: 0 30px;
+}
+
+.topo h4 {
+  font-size: 13px;
+  line-height: 30px;
+  color: #fff;
+  display: inline-block;
+}
+
+.topo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.topo i {
+  color: #fff;
+  line-height: 30px;
+}
+
+/*MENU*/
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.navbar {
+  font-size: 17px;
+  margin-top: 30px;
+  box-shadow: 0 20px 40px -20px rgba(110, 110, 110, 0.1);
+}
+
+.logo {
+  width: 45px;
+  height: 40px;
+}
+
+.navbar a {
+  margin: 0 25px;
+  padding: 10px 20px;
+  color: #000;
+}
+
+/*BANNER*/
+
+.banner {
+  height: 540px;
+  background-image: url("../img/banner3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  background-color: rgba(0, 217, 255, 0.3);
+  background-blend-mode: lighten;
+}
+
+@media only screen and (max-width: 575px) {
+  .banner {
+    height: 400px;
+  }
+  .banner h1 {
+    font-size: 3.3rem !important;
+  }
+  .banner h2 {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    margin-top: 0px;
+  }
+  .banner {
+    background-color: #F5F7F9;
+    background-image: none;
+    margin-top: 0px;
+  }
+  .navMob {
+    position: static;
+  }
+  .anchor {
+    display: block;
+    position: relative;
+    top: 0px;
+    visibility: hidden;
+  }
+}
+
+/*TEXTO DO BANNER*/
+
+#texto {
+  top: 25%;
+}
+
+#texto h1 {
+  font-family: "Sign Painter", serif;
+  font-size: 80px;
+  color: #68B9D6;
+}
+
+#texto h2 {
+  font-size: 18px;
+  color: #68B9D6;
+  margin-bottom: 35px;
+}
+
+#texto hr {
+  width: 120px;
+  height: 2px;
+  color: #D5D5D5;
+}
+
+/*BOTÃO DO BANNER*/
+
+.btn {
+  background-color: #68B9D6;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: rgb(141, 211, 236);
+  color: #fff;
+}
+
+.btnIni:hover {
+  background-color: #68B9D6;
+  color: #fff;
+}
+
+.btnIni:active {
+  background-color: rgb(141, 211, 236);
+}
+
+.btn-primary:active {
+  background-color: #68B9D6 !important;
+}
+
+/*TEXTO SOBRE*/
+
+.slider h2 {
+  font-size: 40px;
+  color: #68B9D6
+}
+
+.slider p {
+  font-size: 18px;
+  line-height: 23px;
+  color: #4A4A4A;
+  margin-bottom: 30px;
+}
+
+/*IMAGEM SOBRE*/
+
+.imgSobre {
+  width: 200px;
+  height: 200px;
+  transition: transform .5s;
+  box-shadow: 0 0 50px 0px rgba(110, 110, 110, 0.1);
+}
+
+.imgSobre:hover {
+  transform: scale(1.3);
+}
+
+/*BACKGROUND DA ÁREA SERVIÇOS*/
+
+.fundo {
+  background-color: #F5F7F9;
+}
+
+/*TEXTO DA ÁREA SERVIÇOS*/
+
+.servico h2 {
+  font-size: 40px;
+  color: #68B9D6
+}
+
+.servico p {
+  font-size: 13px;
+  line-height: 17px;
+  color: #4A4A4A;
+  margin-bottom: 50px;
+}
+
+/*TEXTO DOS SERVIÇOS*/
+
+.produto {
+  margin: 0px;
+}
+
+.produto h3 {
+  font-size: 24px;
+  line-height: 33px;
+  color: #326273;
+}
+
+.produto p {
+  line-height: 25px;
+  color: #4A4A4A;
+  margin-bottom: 40px;
+}
+
+/*BACKGROUND DO CARD DE ARTIGOS*/
+
+.card {
+  background-color: #F5F7F9;
+  border-radius: 20px;
+}
+
+/*TEXTO DO CONTATO*/
+
+.info p {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 15px;
+}
+
+/*LINK DO CONTATO*/
+
+.info a {
+  text-decoration: none;
+  color: #000;
+}
+
+.info a:hover {
+  color: #8BCEE6;
+  border-bottom: 1px solid #8BCEE6;
+}
+
+/*IMAGEM DO MAPA*/
+
+.info img {
+  width: 100%;
+}
+
+/*BACKGROUND DO RODAPÉ*/
+
+.bg {
+  background-color: #8BCEE6;
+}
+
+/*TEXTO DO CRM*/
+
+.logoRodape {
+  width: 60px;
+  height: 60px;
+}
+
+.rodape-crm {
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+}
+
+/*TEXTO DOS LIKS DE RODAPÉ*/
+
+.rodape h5 {
+  font-size: 19px;
+  line-height: 22px;
+  color: #2C88AA;
+}
+
+.rodape a {
+  color: #fff;
+}
+
+/*BACKGROUND DO COPYRIGHT*/
+
+.background {
+  background-color: #68B9D6;
+  color: #fff;
+}
+
+/*TEXTO DO COPYRIGHT*/
+
+.background p {
+  margin-bottom: 0 !important;
+}
+
+/* BACK TO TOP */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(44, 136, 170);
+  background: rgba(44, 136, 170, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgb(44, 136, 170);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 10px;
+}
+
+/*BANNER*/
+
+.backgroundPrin{
+	background-color: #F5F7F9;
+	height: 700px;
+	padding-top: 300px;
+}
+
+@media only screen and (max-width: 991px) {
+  .backgroundPrin {
+    height: 400px;
+    padding-top: 50px;
+  }
+}
+
+.textoPrin h3{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.textoPrin p {
+	margin-bottom: 0px;
+	font-size: 15px;
+	letter-spacing: 0px	!important;
+}
+.artigo h2 {
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.artigo p, li {
+	font-size: 15px;
+}
+
+.comentario h5 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.sobreMim {
+	background-color: #F5F7F9;
+	height: auto;
+
+}
+.sobreMim h5{
+	font-size: 30px;
+	margin-bottom: 15px;
+	color: #68B9D6;
+}
+.sobreMim p{
+	font-size: 15px;
+
+}
+.fotoDra	{
+	width: 200px;
+	height: 200px;
+}
+
+.bg {
+  background-color: #8BCEE6;
+}

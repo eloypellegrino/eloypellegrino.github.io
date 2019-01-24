@@ -1,0 +1,55 @@
+// ESTILOS DA PÁGINA - CARDÁPIO PRINCIPAL
+
+.cardapioPizzasPrincipal {
+    background-color: $cor-escura;
+    color: $cor-clara;
+    h3 {
+        font-family: $fonte-titulo;
+    }
+}
+
+.menuCardapioPrincipal {
+    background-color: $cor-primaria;
+    a {
+        color: $cor-escura;
+    }
+}
+
+.active a,
+.active {
+    color: $cor-secundaria !important;
+}
+
+.salCardapio {
+    position: absolute;
+    right: 0;
+    top: 870px;
+    width: 330px;
+}
+
+.folhaCardapio {
+    position: absolute;
+    top: 1350px;
+    margin-left: -90px;
+}
+
+.chocolatePretoCardapio {
+    position: absolute;
+    top: 1470px;
+    right: 0;
+}
+
+.chocolateBrancoCardapio {
+    position: absolute;
+    top: 2000px;
+}
+
+.bannerCardapio {
+    height: 540px;
+    background-image: url(../img/bannerCardapio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(18, 22, 25, 0.7);
+}

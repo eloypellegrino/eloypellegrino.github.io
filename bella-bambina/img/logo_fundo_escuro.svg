@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 334 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-283.803,-3013.29)">
+        <g id="Logo-Bella-Bambina" serif:id="Logo Bella Bambina" transform="matrix(0.65257,0,0,0.65257,156.683,2937.76)">
+            <g transform="matrix(1.95717,0,0,1.95717,1799.44,-225.09)">
+                <text x="-820.408px" y="266.22px" style="font-family:'Chapaza-Regular', 'Chapaza';font-size:36px;fill:rgb(157,157,157);">B<tspan x="-794.772px -774.743px -762.643px -750.542px -729.652px -714.668px -689.032px -668.143px -635.071px -613.285px -601.254px -578.185px " y="266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px 266.22px ">ella Bambina</tspan></text>
+            </g>
+            <g transform="matrix(1,0,0,1,951.527,28.3138)">
+                <path d="M-421.907,195.704C-421.907,151.394 -457.554,115.473 -501.527,115.473C-545.499,115.473 -581.146,151.394 -581.146,195.704L-421.907,195.704Z" style="fill:rgb(216,65,85);"/>
+            </g>
+            <g transform="matrix(1,0,0,1.7052,963.163,-91.124)">
+                <path d="M-502.177,123.974C-502.177,122.507 -504.207,121.316 -506.708,121.316L-519.618,121.316C-522.119,121.316 -524.15,122.507 -524.15,123.974L-524.15,159.867C-524.15,161.334 -522.119,162.525 -519.618,162.525L-506.708,162.525C-504.207,162.525 -502.177,161.334 -502.177,159.867L-502.177,123.974Z" style="fill:rgb(157,157,157);"/>
+            </g>
+            <g transform="matrix(0.557316,0,0,0.557316,729.509,114.949)">
+                <path d="M-421.907,195.704C-421.907,151.394 -457.554,115.473 -501.527,115.473C-545.499,115.473 -581.146,151.394 -581.146,195.704L-421.907,195.704Z" style="fill:rgb(188,54,68);"/>
+            </g>
+            <g transform="matrix(0.473699,0,0,0.473699,687.573,131.313)">
+                <path d="M-421.907,195.704C-421.907,151.394 -457.554,115.473 -501.527,115.473C-545.499,115.473 -581.146,151.394 -581.146,195.704L-421.907,195.704Z" style="fill:rgb(157,157,157);"/>
+            </g>
+        </g>
+    </g>
+</svg>

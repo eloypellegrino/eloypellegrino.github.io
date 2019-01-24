@@ -1,0 +1,280 @@
+// ESTILOS DA PÁGINA - PRINCIPAL
+@font-face {
+    font-family: Chapaza;
+    src: url(../font/Chapaza.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+$cor-primaria: #F4B44A;
+$cor-secundaria: #BC3644;
+$cor-clara: #fff;
+$cor-escura: #121619;
+$fonte-titulo: 'Chapaza', serif;
+$fonte-subtitulo: 'Satisfy', cursive;
+$xs: "(max-width: 575px)";
+$sm: "(max-width: 767px)";
+$md: "(max-width: 991px)";
+$lg: "(max-width: 1299px)";
+
+
+body {
+    position: relative;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -69px;
+    visibility: hidden;
+    @media #{$sm} {
+        top: 0;
+    }
+}
+
+/* BACK TO TOP */
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 46px;
+    background: $cor-escura;
+    color: $cor-clara;
+    border: 2px solid $cor-primaria;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.7s ease-out;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: $cor-escura;
+    color: $cor-primaria;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+/* Logotipo */
+
+.logoPrincipal {
+    width: 350px;
+    background-color: $cor-primaria;
+    padding: 20px 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.logoPrincipalFundo {
+    background-color: $cor-escura;
+    margin: 0;
+    @media #{$sm} {
+        position: relative;
+        padding: 20px 10px;
+    }
+}
+
+.logoMobile {
+    font-family: $fonte-titulo;
+    font-size: 1.7rem;
+}
+
+
+/* Menu principal */
+
+.nav-link {
+    color: $cor-clara;
+    padding: 10px 50px;
+    font-family: $fonte-subtitulo;
+    font-size: 1.4rem;
+    &:hover {
+        color: $cor-secundaria;
+    }
+}
+
+.active a,
+.active {
+    color: $cor-secundaria;
+}
+
+.botaoHamburguer {
+    color: $cor-primaria;
+}
+
+/* Banner Principal */
+
+.bannerPrincipal {
+    height: 540px;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(18, 22, 25, 0.7);
+    background-attachment: fixed;
+}
+
+.bannerPrincipal h1 {
+    font-family: $fonte-titulo;
+    color: $cor-clara;
+}
+
+.bannerPrincipal h2 {
+    font-family: $fonte-subtitulo;
+    color: $cor-clara;
+    font-size: 5rem;
+    @media #{$xs} {
+        font-size: 2.5rem;
+    }
+}
+
+.botaoCardapioBanner {
+    background-color: $cor-primaria;
+    color: $cor-escura;
+    font-size: 1.2rem;
+    width: 180px;
+    @media #{$xs} {
+        margin-top: 20px;
+    }
+}
+
+.botaoCardapioBanner:hover {
+    background-color: rgb(207, 147, 50);
+    color: $cor-clara;
+}
+
+.hvr-icon-forward .hvr-icon {
+    transition-duration: 1s;
+}
+
+.titulosSecoesFundo {
+    background-color: $cor-primaria;
+}
+
+.titulosSecoes {
+    font-family: $fonte-titulo;
+    font-size: 3rem;
+}
+
+.subtitulosSecoes {
+    font-family: $fonte-subtitulo;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+}
+
+/* Cardápio */
+
+.cardapioPizzasInicio {
+    height: 100%;
+    background-color: $cor-escura;
+    color: $cor-clara;
+}
+
+.cardapioPizzasInicio h3,
+span {
+    color: $cor-primaria;
+}
+
+.cardapioPizzasInicio h3 {
+    font-family: $fonte-titulo;
+}
+
+.cardapioPizzaTamanho {
+    width: 210px;
+    height: 210px;
+    @media #{$xs} {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.botaoCardapio {
+    background-color: none;
+    color: $cor-primaria;
+    border: 2px solid $cor-primaria;
+    font-size: 1.2rem;
+    width: 180px;
+}
+
+.botaoCardapio:hover {
+    background-color: $cor-primaria;
+    color: $cor-escura;
+}
+
+/* Ingredientes título */
+
+/* Ingredientes Pizzas */
+
+.ingredientesPizzasInicio {
+    height: 100%;
+    background-color: $cor-escura;
+    color: $cor-clara;
+
+}
+
+// Contato
+#contato {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
+.fundoContato {
+    background-color: $cor-escura;
+}
+
+.centroContato {
+    background-color: $cor-secundaria;
+}
+
+.centroContato h4 {
+    font-family: $fonte-titulo;
+    font-size: 2rem;
+}
+
+.centroContato label {
+    color: $cor-clara;
+    font-family: $fonte-subtitulo;
+    font-size: 1.3rem;
+}
+
+.centroContato button {
+    background-color: $cor-secundaria;
+    color: $cor-clara;
+    border: 2px solid $cor-clara;
+    font-size: 1.2rem;
+    width: 180px;
+}
+
+.centroContato button:hover {
+    background-color: $cor-clara;
+    color: $cor-secundaria;
+}
+
+// Rodape
+.fundoRodape {
+    height: 500px;
+    background-color: $cor-escura;
+    padding-top: 130px;
+}
+
+.fundoRodape h4 {
+    font-family: $fonte-titulo;
+    font-size: 2rem;
+}
+
+.fundoRodape .nav a {
+    color: $cor-clara;
+}

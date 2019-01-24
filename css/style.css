@@ -705,31 +705,56 @@ body {
           justify-content: space-evenly;
   background: #FFF;
   border-radius: 5px;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .4s;
+  transition: all .4s;
   margin: 10px 10px;
+}
+
+.containerProject .projects .card.-first {
+  background: url(../img/bella-bambina.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.containerProject .projects .card.-second {
+  background: url(../img/agencia-deltha.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.containerProject .projects .card.-third {
+  background: url(../img/dra-carla.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .containerProject .projects .card:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  -webkit-box-shadow: 0 0px 40px rgba(44, 44, 44, 0.03);
-          box-shadow: 0 0px 40px rgba(44, 44, 44, 0.03);
+  -webkit-box-shadow: 0px 0px 40px rgba(44, 44, 44, 0.1);
+          box-shadow: 0px 0px 40px rgba(44, 44, 44, 0.1);
 }
 
 .containerProject .projects .card a {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
-  font-style: italic;
+  font-weight: 600;
   text-decoration: none;
-  color: #006BFF;
+  text-align: right;
+  color: #fff;
   position: absolute;
   bottom: 25px;
-  right: 25px;
+  right: 0px;
+  background: #0C57FB;
+  padding: 15px;
+  padding-right: 20px;
+  width: 135px;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-box-shadow: -10px 0px 20px rgba(44, 44, 44, 0.2);
+          box-shadow: -10px 0px 20px rgba(44, 44, 44, 0.2);
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .containerProject .projects .card a:hover {
-  color: #0a49d1;
+  background: #0a49d1;
 }
 
 .containerContact {
@@ -935,11 +960,11 @@ body {
 }
 
 .darkLink {
-  color: #c0c0c0 !important;
+  color: #000000 !important;
 }
 
 .darkLink:hover {
-  color: #fff !important;
+  color: #6b6b6b !important;
 }
 
 .darkBackgroundSecondary {
