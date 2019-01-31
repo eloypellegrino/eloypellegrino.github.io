@@ -25,11 +25,13 @@ checkbox.addEventListener("click", () => {
 checkbox.checked = false;
 
 function menuClick() {
-    if (menuMobile.classList.contains("fa-bars")) {
-        menuMobile.classList.replace("fa-bars", "fa-times");
-    } else {
-        menuMobile.classList.replace("fa-times", "fa-bars");
-    }
+    //Fazer correção para que seja apresentado o X no menu mobile
+    
+    // if (menuMobile.classList.contains("fa-bars")) {
+    //     menuMobile.classList.replace("fa-bars", "fa-times");
+    // } else {
+    //     menuMobile.classList.replace("fa-times", "fa-bars");
+    // }
     menuMobileList.classList.toggle("-active");
 }
 
