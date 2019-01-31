@@ -21,12 +21,14 @@ checkbox.addEventListener("click", () => {
         item.classList.toggle("darkText");
     }
     backgroundImage.classList.toggle("darkBackgroundImage");
+    menuMobile.classList.toggle("darkText");
+    menuMobileList.classList.toggle("darkBackground");
 });
 checkbox.checked = false;
 
 function menuClick() {
     //Fazer correção para que seja apresentado o X no menu mobile
-    
+
     // if (menuMobile.classList.contains("fa-bars")) {
     //     menuMobile.classList.replace("fa-bars", "fa-times");
     // } else {
