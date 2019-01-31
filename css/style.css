@@ -323,7 +323,8 @@ body {
   border-radius: 5px;
 }
 
-.fas.fa-bars {
+.fas.fa-bars,
+.fas.fa-times {
   display: none;
 }
 
@@ -502,7 +503,6 @@ body {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
-  min-width: 290px;
   padding: 0 30px;
 }
 
@@ -905,26 +905,58 @@ body {
     line-height: 1.3;
   }
   .contactButton,
-  .navigation nav {
+  .navigation nav .list {
     display: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
   }
-  .menuMobile {
+  .navigation {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navigation nav .list.-active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    margin-top: 50px;
+    background: #fff;
+    padding: 15px 0;
+  }
+  .navigation nav .list.-active li {
+    margin: 10px 0;
+  }
+  .closeMenuMobile {
+    display: none !important;
+  }
+  .menuMobile {
+    display: block;
     text-decoration: none;
     color: #000;
+    cursor: pointer;
   }
-  .fas.fa-bars {
+  .fas.fa-bars,
+  .fas.fa-times {
     display: block;
   }
   .containerAbout {
     padding-top: 60px;
   }
   .containerAbout .about div {
+    padding: 0 10px;
+  }
+  .containerAbout .about div:last-child {
     padding: 0 10px;
   }
   .containerService {

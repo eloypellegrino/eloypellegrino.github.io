@@ -308,7 +308,8 @@ body {
     }
 }
 
-.fas.fa-bars {
+.fas.fa-bars,
+.fas.fa-times {
     display: none;
 }
 
@@ -450,7 +451,6 @@ body {
 
         div {
             flex: 2;
-            min-width: 290px;
             padding: 0 30px;
         }
 
@@ -837,18 +837,45 @@ body {
     }
 
     .contactButton,
-    .navigation nav {
+    .navigation nav .list {
         display: none;
+        transition: all .2s;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+    }
+
+    .navigation nav .list.-active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        margin-top: 50px;
+        background: #fff;
+        padding: 15px 0;
+
+        li {
+            margin: 10px 0;
+        }
+    }
+
+    .closeMenuMobile {
+        display: none !important;
     }
 
     .menuMobile {
-        display: flex;
-        align-items: center;
+        display: block;
         text-decoration: none;
         color: #000;
+        cursor: pointer;
     }
 
-    .fas.fa-bars {
+    .fas.fa-bars,
+    .fas.fa-times {
         display: block;
     }
 
@@ -860,7 +887,12 @@ body {
         .about {
             div {
                 padding: 0 10px;
+
+                &:last-child {
+                    padding: 0 10px;
+                }
             }
+
         }
     }
 
